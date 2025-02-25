@@ -1,0 +1,333 @@
+body {
+	background-image: url("http://i.imgur.com/eOWImmj.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Quicksand', sans-serif;
+	position: relative;
+}
+
+header {
+	font-size: 60px;
+	text-align: center;
+	color: white;
+	font-family: 'Monoton', sans-serif;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	color: lightgrey;
+}
+
+.bottom {
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+	display: block;
+}
+
+.right-column {
+	position: relative;
+	float: right;
+	margin: auto;
+	display: inline-block;
+	height: 585px;
+	width: 200px;
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-top: 55px;
+	border-radius: 30px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#table {
+	display: inline-block;
+	position: relative;
+	height: 700px;
+	float: left;
+}
+
+#table-frame { 
+	display: inline-block;
+	position: absolute;
+	top: 45px;
+	left: 4px;
+}
+
+#column-frame {
+	display: inline-block;
+	position: absolute;
+	top: -31px;
+	left: -56px;
+}
+
+#balance {
+	color: #007399;
+	display: inline-block;
+	background-image: url(background1.jpg);
+	box-shadow: inset 0 0 0 4px #5e676e;
+	margin: 20px 0 0 0;
+	border-radius: 10px;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	padding: 10px;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: sans-serif;
+	letter-spacing: 4px;
+    border: lightblue 3px;
+}
+
+#msg {
+	font-size: 25px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: block;
+	margin: 0 auto;
+	width: 700px;
+	height: 20px;
+	border-radius: 20px;
+	border: rgba(255, 255, 255, 0.2) 4px;
+}
+
+#board {
+	border-collapse: collapse;
+	border-image: url(shell1.png) 25% round;
+	position: absolute;
+	top: 103px;
+	left: 165px;
+}
+
+#board td {
+	border: solid darkgrey 3px;
+}
+
+#board td img {
+	text-align: center;
+	height: 143px;
+	width: 143px;
+	vertical-align: middle;
+}
+
+#board td img.loser-cell {
+	opacity: 0.3;
+}
+
+/*--- The Radio Buttons ---*/
+
+#radio label {
+	display: inline-block;
+	float: left;
+	position: relative;
+	left: 10px;
+	font-weight: 200;
+	font-size: 1.35em;
+	padding: 10px 10px 0 60px;
+	margin: 10px auto;
+	height: 10px;
+	width: 60px;
+	z-index: 1; /*stay on top*/
+	cursor: pointer;
+	-webkit-transition: all 0.25s linear;
+	color: white;
+}
+
+#radio label:hover {
+	color: yellow;
+}
+
+footer {
+	padding-top: 30px;
+	color: #808080;
+	clear: both;
+	text-align: center;
+	font-size: 13px;
+}
+
+.signature {
+	padding-top: 20px;
+}
+
+.how-to-play a {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+/* ---- Spin Reels Button --- */
+
+.btn {
+	display: inline-block;
+	position: relative; 
+	cursor: pointer;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	background: #464d53;
+	margin: 40px 0 0 0px;
+	text-align: center;
+	border-radius: 999px;
+	color: #99e6ff;
+	font-size: 18px;
+	font-family: sans-serif;
+	box-shadow: 
+		inset 1px 1px 2px rgba(255,255,255,0.3), 
+		inset 3px 15px 45px rgba(255,255,255,0.1),
+		inset -1px -1px 2px rgba(0,0,0,0.5), 
+		inset -3px -15px 45px rgba(0,0,0,0.2),
+		1px 5px 30px -4px rgba(0,0,0,1);
+	  -webkit-transition: 0.1s ease-out;
+	  -moz-transition:    0.1s ease-out;
+	  -o-transition:      0.1s ease-out;
+	  transition:         0.1s ease-out;
+}
+
+.btn:before {
+	content: "";
+	background: #1A1A1A;
+	/*display: inline-block;*/
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	z-index: -1;
+	border-radius: 999px;
+	box-shadow: inset -1px -1px 2px rgba(255,255,255,0.3), 
+	inset -5px -15px 40px rgba(255,255,255,0.1),
+	inset 1px 1px 2px rgba(0,0,0,0.5), 
+	inset 5px 15px 40px rgba(0,0,0,0.2),
+	-2px -40px 50px -20px rgba(255,255,255,0.1),
+	/*2px 35px 50px -10px rgba(0,0,0,0.4),*/
+	0px 0px 15px 2px rgba(60,60,60,1);
+}
+
+.btn:active {
+	color: rgba(0,0,0,0.7);
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.15);
+	box-shadow: inset 1px 1px 2px rgba(255,255,255,0.3), 
+	          inset 3px 15px 45px rgba(0,0,0,0.2),
+	          inset -1px -1px 2px rgba(0,0,0,0.5), 
+	          inset -3px -15px 45px rgba(255,255,255,0.1),
+	          1px 5px 10px -4px rgba(0,0,0,1);
+}
+
+/*--- The Start Again Button ---*/
+
+.button {
+    position: relative;
+    top: 50px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    -webkit-border-radius: 10px;
+    
+    -webkit-box-shadow: 
+        0px 3px rgba(128,128,128,1), /* gradient effects */
+        0px 4px rgba(118,118,118,1),
+        0px 5px rgba(108,108,108,1),
+        0px 6px rgba(98,98,98,1),
+        0px 7px rgba(88,88,88,1),
+        0px 8px rgba(78,78,78,1),
+        0px 14px 6px -1px rgba(128,128,128,1); /* shadow */
+    
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+} 
+
+.button span {
+    background-color: #E8E8E8;
+    background-image: 
+        /* gloss gradient */
+        -webkit-gradient(
+            linear, 
+            left bottom, 
+            left top, 
+            color-stop(50%,rgba(255,255,255,0)), 
+            color-stop(50%,rgba(255,255,255,0.3)), 
+            color-stop(100%,rgba(255,255,255,0.2)))
+        
+        /* dark outside gradient */
+        -webkit-gradient(
+            linear, 
+            left top, 
+            right top, 
+            color-stop(0%,rgba(210,210,210,0.3)), 
+            color-stop(20%,rgba(210,210,210,0)), 
+            color-stop(80%,rgba(210,210,210,0)), 
+            color-stop(100%,rgba(210,210,210,0.3))),
+        
+        /* light inner gradient */
+        -webkit-gradient(
+            linear, 
+            left top, 
+            right top, 
+            color-stop(0%,rgba(255,255,255,0)), 
+            color-stop(20%,rgba(255,255,255,0.5)), 
+            color-stop(80%,rgba(255,255,255,0.5)), 
+            color-stop(100%,rgba(255,255,255,0))),        
+        
+        /* diagonal line pattern */
+        -webkit-gradient(
+            linear, 
+            0% 100%, 
+            100% 0%, 
+            color-stop(0%,rgba(255,255,255,0)), 
+            color-stop(40%,rgba(255,255,255,0)), 
+            color-stop(40%,#D2D2D1), 
+            color-stop(60%,#D2D2D1), 
+            color-stop(60%,rgba(255,255,255,0)), 
+            color-stop(100%,rgba(255,255,255,0)));
+    
+        -webkit-box-shadow:
+            0px -1px #fff, /* top highlight */
+            0px 1px 1px #FFFFFF; /* bottom edge */
+    
+    -webkit-background-size: 100%, 100%, 100%, 4px 4px;
+    -webkit-border-radius: 10px;
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    color: #3A474D;
+    text-transform: uppercase;
+    font-family: 'TradeGothicLTStd-BdCn20', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 0px 1px #fff, 0px -1px #262F33;
+}
+
+.button span:hover {
+    color: #4da6ff;
+    text-shadow: 0px -1px #97A63A;
+    cursor: pointer;
+}
+
+.button:active {
+    -webkit-box-shadow: 
+        0px 3px rgba(128,128,128,1),
+        0px 4px rgba(118,118,118,1),
+        0px 5px rgba(108,108,108,1),
+        0px 6px rgba(98,98,98,1),
+        0px 7px rgba(88,88,88,1),
+        0px 8px rgba(78,78,78,1),
+        0px 10px 2px 0px rgba(128,128,128,.6); /* shadow */
+}
+
+.button:active span{
+    -webkit-transform: translate(0, 5px); /* depth of button press */
+}
